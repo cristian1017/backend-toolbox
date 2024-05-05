@@ -1,0 +1,38 @@
+{
+  "name": "test-toolbox",
+  "version": "1.0.0",
+  "description": "Test Toolbox",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "mocha ./tests/index.test.js",
+    "lint": "standard --fix"
+  },
+  "mocha": {
+    "extension": "mjs"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "standardjs"
+  ],
+  "author": "Cristian Mauricio Gutierrez Rivera",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.1.0",
+    "standard": "^17.1.0"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
