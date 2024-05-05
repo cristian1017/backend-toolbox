@@ -30,8 +30,8 @@ describe('#Test Endpoints', () => {
             done(err)
           } else {
             expect(res).to.have.status(200)
-            expect(res.body).to.be.an('object')
-            expect(res.body.file).to.equal(sampleFileName)
+            expect(res.body).to.be.an('array')
+            expect(res.body[0].file).to.equal(sampleFileName)
             done()
           }
         })
@@ -45,11 +45,11 @@ describe('#Test Endpoints', () => {
           if (err) {
             done(err)
           } else {
-            expect(res.body.lines).to.be.an('array')
-            if (res.body.lines.length > 0) {
-              expect(res.body.lines.length).to.be.greaterThan(0)
+            expect(res.body[0].lines).to.be.an('array')
+            if (res.body[0].lines.length > 0) {
+              expect(res.body[0].lines.length).to.be.greaterThan(0)
             } else {
-              expect(res.body.lines.length).to.equal(0)
+              expect(res.body[0].lines.length).to.equal(0)
             }
             done()
           }
