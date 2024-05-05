@@ -22,10 +22,13 @@ Para instalar el proyecto y sus dependencias, sigue estos pasos:
 1. Clona el repositorio:
 
 ```
-git clone [URL_DEL_REPOSITORIO] backend
+git clone https://github.com/cristian1017/backend-toolbox.git backend
+```
+2. Ingresa a la carpeta 
+```
 cd backend
 ```
-2. Instala las dependencias del proyecto:
+3. Instala las dependencias del proyecto:
 ```
 npm install
 ```
